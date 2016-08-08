@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script src="../javascripts/index.js"></script>
+    <title>Login</title>
+    <link href="stylesheets/LoginPage.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <h1>QUIZ APP</h1>
+
+    <div class="center-form">
+    <form action="/login" name="indexForm" id="login_form" method="POST">
+    UserName<input type="name" name="username"><br>
+    Password<input type="password" name="password"><br>
+    <!--<input type="submit" value="submit" onclick="return validate()">-->
+    <input type="submit" value="submit" >
+    
+    </form>
+    </div>
+  </body>
+</html>

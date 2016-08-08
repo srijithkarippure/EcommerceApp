@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ username }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src ="../javascripts/submitAnswerTest.js"> </script>
+  </head>
+  <body>
+   
+<form align="right" name="form1" method="post" action="/logout">
+<label>
+  
+  <input name="submit2" type="submit" id="submit2" value="log out">
+  </label>
+</form>
+
+    <p>Welcome {{ username }}</p><br>
+    <p>Your quiz is as follows:</p>
+
+    <form action='/submitAnswer' name="mcq" method="POST">
+    	<label>Whatis2+2?</label><br>
+
+    	<input type="radio" name="answer1" value="1" checked> 1<br>
+  <input type="radio" name="answer1" value="4"> 4<br>
+  <input type="radio" name="answer1" value="3"> 3<br>
+
+  <label name="first"></label><br>
+
+  <label>Whatis3*4?</label><br>
+    	<input type="radio" name="answer2" value="1" checked> 1<br>
+  <input type="radio" name="answer2" value="12"> 12<br>
+  <input type="radio" name="answer2" value="9"> 9<br>
+  <label id="second"></label><br>
+
+   <label>What is 2/2?</label><br>
+    	<input type="radio" name="answer3" value="1" checked> 1<br>
+  <input type="radio" name="answer3" value="2"> 2<br>
+  <input type="radio" name="answer3" value="4"> 4<br>
+  <label id="third"></label><br>
+
+  <input type="submit" id="answers" value="Submit Answers" onclick="updateScreen()">
+    </form>
+
+
+  
+  </body>
+</html>
